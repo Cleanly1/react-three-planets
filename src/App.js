@@ -21,6 +21,7 @@ function Jumbo() {
 }
 
 function App() {
+	const intense = 0.4;
 	return (
 		<div className="App">
 			<Canvas camera={{ position: [-50, 50, 50], far: 4000 }}>
@@ -44,12 +45,71 @@ function App() {
 							/>
 						);
 					})}
-					<pointLight position={[0, 50, 0]} args={["white", 0.5]} />
-					<pointLight position={[0, -50, 0]} args={["white", 0.5]} />
-					<pointLight position={[50, 0, 0]} args={["white", 0.5]} />
-					<pointLight position={[-50, 0, 0]} args={["white", 0.5]} />
-					<pointLight position={[0, 0, 50]} args={["white", 0.5]} />
-					<pointLight position={[0, 0, -50]} args={["white", 0.5]} />
+					<pointLight
+						position={[0, 80, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, -80, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[80, 0, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[-80, 0, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, 0, 80]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, 0, -80]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, 40, 40]}
+						args={["white", intense]}
+					/>
+
+					<pointLight
+						position={[0, 40, -40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[40, 0, -40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[-40, 0, 40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[-40, 0, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[40, 0, 0]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[-40, 0, -40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[40, 0, 40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, -40, -40]}
+						args={["white", intense]}
+					/>
+					<pointLight
+						position={[0, -40, 40]}
+						args={["white", intense]}
+					/>
 					{/* <Cube width="1" height="1" depth="1" color="hotpink" /> */}
 				</Suspense>
 			</Canvas>
