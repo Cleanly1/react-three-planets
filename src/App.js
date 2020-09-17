@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Canvas } from "react-three-fiber";
-import { OrbitControls, PerspectiveCamera, Text } from "drei";
+import { OrbitControls, Text } from "drei";
 //import Cube from "./components/Cube/Cube";
 import Sphere from "./components/Planet/Planet";
-import Shape from "./components/Shape/Yshape";
+//import Shape from "./components/Shape/Yshape";
 
 import "./App.css";
 import { Planets } from "./assets/Planets";
