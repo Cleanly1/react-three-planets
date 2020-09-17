@@ -1,15 +1,8 @@
-import React, { useState, useRef } from "react";
-import { useSpring, a } from "react-spring/three";
+import React, { useRef } from "react";
+import { a } from "react-spring/three";
 import { useFrame } from "react-three-fiber";
 
 const Planet = ({ radius, color, x, y, z, scale, vel }) => {
-	const [clicked, setClicked] = useState(false);
-	const [hovered, setHovered] = useState(false);
-	const springs = useSpring({
-		scale: clicked ? [1.5, 1.5, 1.5] : [1, 1, 1],
-		color: hovered ? color : "white",
-	});
-
 	const group = useRef();
 
 	useFrame(() => {

@@ -14,7 +14,6 @@ function App() {
 			<Canvas camera={{ position: [-50, 50, 50], far: 4000 }}>
 				<OrbitControls />
 				<ambientLight />
-				<Shape />
 				<Text
 					color="white" // default
 					anchorX="center" // default
