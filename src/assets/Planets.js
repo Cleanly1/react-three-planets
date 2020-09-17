@@ -58,7 +58,7 @@ export const Planets = [
 	{
 		name: "Sun",
 		color: "yellow",
-		size: 80,
+		size: 20,
 		distanceFromSun: 0,
 		orbitalVelocity: 0,
 	},
